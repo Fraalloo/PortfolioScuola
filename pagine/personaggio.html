@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <!-- Metainformazioni -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        <meta name="keyword" content="Portfolio, Personal, Website">
+        <meta name="author" content="Francesco Gallo">
+        <link rel="icon" type="image/png" href="../risorse/io.jpeg">
+        <title>Sito Web Personale - Personaggio</title>
+        
+        <!-- Link di CSS-->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../stile/personaggio.css">
+
+        <!-- Link del font Fredoka -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <!-- Load di JS -->
+        <script>
+            function toggle(){
+                let menu = document.getElementById("menu")
+                let btn1 = document.getElementsByClassName("btn1")[0]
+                let btn2 = document.getElementsByClassName("btn2")[0]
+
+                if(menu.style.display === "block"){
+                    menu.style.display = "none"
+                    btn1.style.display = "block"
+                    btn2.style.display = "none"
+                }else{
+                    menu.style.display = "block"
+                    btn1.style.display = "none"
+                    btn2.style.display = "block"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="op">
+            <header>
+                <section>
+                    <div class="titolo">
+                        <a href="personaggio.html">Contatti</a>
+                    </div>
+                    <div>
+                        <br>
+                        <span onclick="toggle()" class="btn btn1">Menù</span>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li><span onclick="toggle()" class="btn btn2">Menù</span></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="contatti.html">Contatti</a></li>
+                            <li><a href="materie.html">Materie</a></li>
+                            <li><a href="hobby.html">Hobby</a></li>
+                            <li><a href="personaggio.html">Personaggio</a></li>
+                            <li><a href="contattami.html">Contattami</a></li>     
+                        </ul>
+                    </nav>
+                </section>
+                <article>
+                    <div class="testoIniziale">
+                        <h4>Queste sono informazioni su di me!</h4>
+                        <h2>Pagina dei<br>personaggi!</h2>
+                    </div>
+                </article>
+            </header>
+            <main>
+                <div class="info">
+                    <span>
+                        Nah I'd Win<br>
+                        <img src="../risorse/pers.jpeg" alt="Gojo">
+                    </span>
+                    <hr>
+                    <span>
+                        Do you believe in 'Gravity'?<br>
+                        What you need is my Stand, "The World".<br>
+                        What you can find beyond the powers of my Stand is where you need to go in order to find Heaven. What you need is a trustworthy friend. He must be someone capable of controlling his own desires. He must be someone who is not interested in political power, fame, wealth, or sexual desire, and who chooses the will of God before the law of humans.<br>
+                        Will I, DIO, be able to meet someone like this one day?<br>
+                        <img src="../risorse/gravity.webp" alt="Gr">
+                    </span>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <!-- Metainformazioni -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        <meta name="keyword" content="Portfolio, Personal, Website">
+        <meta name="author" content="Francesco Gallo">
+        <link rel="icon" type="image/png" href="../risorse/io.jpeg">
+        <title>Sito Web Personale - Materie</title>
+        
+        <!-- Link di CSS-->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../stile/materie.css">
+
+        <!-- Link del font Fredoka -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        
+        <!-- Load di JS -->
+        <script>
+            function toggle(){
+                let menu = document.getElementById("menu")
+                let btn1 = document.getElementsByClassName("btn1")[0]
+                let btn2 = document.getElementsByClassName("btn2")[0]
+
+                if(menu.style.display === "block"){
+                    menu.style.display = "none"
+                    btn1.style.display = "block"
+                    btn2.style.display = "none"
+                }else{
+                    menu.style.display = "block"
+                    btn1.style.display = "none"
+                    btn2.style.display = "block"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="op">
+            <header>
+                <section>
+                    <div class="titolo">
+                        <a href="materie.html">Materie</a>
+                    </div>
+                    <div>
+                        <br>
+                        <span onclick="toggle()" class="btn btn1">Menù</span>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li><span onclick="toggle()" class="btn btn2">Menù</span></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="contatti.html">Contatti</a></li>
+                            <li><a href="materie.html">Materie</a></li>
+                            <li><a href="hobby.html">Hobby</a></li>
+                            <li><a href="personaggio.html">Personaggio</a></li>
+                            <li><a href="contattami.html">Contattami</a></li>     
+                        </ul>
+                    </nav>
+                </section>
+                <article>
+                    <div class="testoIniziale">
+                        <h4>Queste sono informazioni su di me!</h4>
+                        <h2>Pagina delle<br>materie!</h2>
+                    </div>
+                </article>
+            </header>
+            <main>
+                <div class="info">
+                    <span class="page-nav">
+                        <ul>
+                            <li><a href="#mate">Matematica</a></li>
+                            <li><a href="#inf">Informatica</a></li>
+                            <li><a href="#TP">TPSIT</a></li>
+                            <li><a href="#sis">Sistemi e reti</a></li>
+                            <li><a href="#tlc">TLC</a></li>
+                        </ul>
+                        <img src="../risorse/mat.jpg" alt="Materie">
+                    </span>
+                    <hr>
+                    <span id="mate">
+                        <h2>Matematica</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam vel fuga repudiandae, tenetur iure velit officiis voluptate excepturi, veritatis placeat. Aut nam consequuntur perspiciatis assumenda quidem, illo ab animi!
+                        </p>
+                        <img src="../risorse/matem.jpeg" alt="Matematica">
+                    </span>
+                    <hr>
+                    <span id="inf">
+                        <h2>Informatica</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam vel fuga repudiandae, tenetur iure velit officiis voluptate excepturi, veritatis placeat. Aut nam consequuntur perspiciatis assumenda quidem, illo ab animi!
+                        </p>
+                        <img src="../risorse/inform.jpeg" alt="Informatica">
+                    </span>
+                    <hr>
+                    <span id="TP">
+                        <h2>TPSIT</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam vel fuga repudiandae, tenetur iure velit officiis voluptate excepturi, veritatis placeat. Aut nam consequuntur perspiciatis assumenda quidem, illo ab animi!
+                        </p>
+                        <img src="../risorse/tpsit.jpeg" alt="TPSIT">
+                    </span>
+                    <hr>
+                    <span id="sis">
+                    <h2>Sistemi e reti</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam vel fuga repudiandae, tenetur iure velit officiis voluptate excepturi, veritatis placeat. Aut nam consequuntur perspiciatis assumenda quidem, illo ab animi!
+                        </p>
+                        <img src="../risorse/reti.jpeg" alt="Sistemi e reti">
+                    </span>
+                    <hr>
+                    <span id="tlc">
+                        <h2>TLC</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam vel fuga repudiandae, tenetur iure velit officiis voluptate excepturi, veritatis placeat. Aut nam consequuntur perspiciatis assumenda quidem, illo ab animi!
+                        </p>
+                        <img src="../risorse/tlc.jpeg" alt="TLC">
+                    </span>
+                    <br><br>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

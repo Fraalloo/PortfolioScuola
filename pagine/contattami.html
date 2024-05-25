@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <!-- Metainformazioni -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        <meta name="keyword" content="Portfolio, Personal, Website">
+        <meta name="author" content="Francesco Gallo">
+        <link rel="icon" type="image/png" href="../risorse/io.jpeg">
+        <title>Sito Web Personale - Contattami</title>
+        
+        <!-- Link di CSS-->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../stile/contattami.css">
+
+        <!-- Link del font Fredoka -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <!-- Load di JS -->
+        <script>
+            function toggle(){
+                let menu = document.getElementById("menu")
+                let btn1 = document.getElementsByClassName("btn1")[0]
+                let btn2 = document.getElementsByClassName("btn2")[0]
+
+                if(menu.style.display === "block"){
+                    menu.style.display = "none"
+                    btn1.style.display = "block"
+                    btn2.style.display = "none"
+                }else{
+                    menu.style.display = "block"
+                    btn1.style.display = "none"
+                    btn2.style.display = "block"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="op">
+            <header>
+                <section>
+                    <div class="titolo">
+                        <a href="contattami.html">Contattami</a>
+                    </div>
+                    <div>
+                        <br>
+                        <span onclick="toggle()" class="btn btn1">Menù</span>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li><span onclick="toggle()" class="btn btn2">Menù</span></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="contatti.html">Contatti</a></li>
+                            <li><a href="materie.html">Materie</a></li>
+                            <li><a href="hobby.html">Hobby</a></li>
+                            <li><a href="personaggio.html">Personaggio</a></li>
+                            <li><a href="contattami.html">Contattami</a></li>     
+                        </ul>
+                    </nav>
+                </section>
+                <article>
+                    <div class="testoIniziale">
+                        <h4>Queste sono informazioni su di me!</h4>
+                        <h2>Pagina per<br>contattarmi!</h2>
+                    </div>
+                </article>
+            </header>
+            <main>
+                <div class="info">
+                    <h2>Compila il form per contattarmi!</h2>
+                    <img src="../risorse/contme.jpeg" alt="Tel"><br><br>
+                    <form action="" method="">
+                        Inserisci qui il tuo nome: <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                        Inserisci qui il tuo cognome: <input type="text" name="cognome" id="cognome" placeholder="Cognome" required><br>
+                        Inserisci qui la mail: <input type="email" name="email" id="email" placeholder="Email" required><br>
+                        Inserisci qui il tuo numero: <input type="tel" name="tel" id="tel" placeholder="Phone" required><br>
+                        Sesso: <input type="radio" name="sesso">Maschio <input type="radio" name="sesso" required>Femmina<br>
+                        Luogo di nascita: <input type="text" name="luogo" id="luogo" placeholder="Città" required><br>
+                        Data di nascita: <input type="date" name="data" id="data" required><br>
+                        Categoria: <select name="classe" id="classe" required>
+                            <option value="" selected disabled hidden>Seleziona la categoria</option>
+                            <option value="1">Studente</option>
+                            <option value="2">Prof</option>
+                        </select><br>
+                        <textarea name="commento" id="commento" cols="30" rows="10" placeholder="Inserisci qui quello che vuoi dirmi" required></textarea><br>
+                        <input type="submit" value="Invia">
+                        <input type="reset" value="Cancella">
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <!-- Metainformazioni -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio">
+        <meta name="keyword" content="Portfolio, Personal, Website">
+        <meta name="author" content="Francesco Gallo">
+        <link rel="icon" type="image/png" href="risorse/io.jpeg">
+        <title>Sito Web Personale - Home</title>
+
+        <!-- Link di CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stile/home.css">
+
+        <!-- Link del font Fredoka-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+        <!-- Load di JS -->
+        <script>
+            function toggle(){
+                let menu = document.getElementById("menu")
+                let btn1 = document.getElementsByClassName("btn1")[0]
+                let btn2 = document.getElementsByClassName("btn2")[0]
+
+                if(menu.style.display === "block"){
+                    menu.style.display = "none"
+                    btn1.style.display = "block"
+                    btn2.style.display = "none"
+                }else{
+                    menu.style.display = "block"
+                    btn1.style.display = "none"
+                    btn2.style.display = "block"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <header>
+                <section>
+                    <div class="titolo">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div>
+                        <br>
+                        <span onclick="toggle()" class="btn btn1">Menù</span>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li><span onclick="toggle()" class="btn btn2">Menù</span></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pagine/contatti.html">Contatti</a></li>
+                            <li><a href="pagine/materie.html">Materie</a></li>
+                            <li><a href="pagine/hobby.html">Hobby</a></li>
+                            <li><a href="pagine/personaggio.html">Personaggio</a></li>
+                            <li><a href="pagine/contattami.html">Contattami</a></li>     
+                        </ul>
+                    </nav>
+                </section>
+                <article>
+                    <div class="testoIniziale">
+                        <h4>Questo è il mio sito web personale!</h4>
+                       <h2>Ciao, io sono<br>Francesco Gallo!</h2>
+                    </div>
+                </article>
+            </header>
+            <main>
+                <div class="info">
+                    <div class="page-nav">
+                        <span>
+                            <ul>
+                                <li><a href="#anag">Anagrafica</a></li>
+                                <li><a href="#desc">Descrizione</a></li>
+                                <li><a href="#prog">Progetti</a></li>
+                            </ul>
+                            <img src="risorse/io.jpeg" alt="Io">
+                        </span>
+                    </div>
+                    <hr>
+                    <span id="anag">
+                        <h2>Anagrafica</h2>
+                        Nome: Francesco<br>
+                        Cognome: Gallo<br>
+                        Sesso: Maschio<br>
+                        Luogo di nascita: San Giovanni Rotondo<br>
+                        Data di nascita: 1/02/2008<br>
+                    </span>
+                    <hr>
+                    <span id="desc">
+                        <h2>Descrizione</h2>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis cum, aliquid inventore quasi eveniet labore fuga rerum omnis consequuntur itaque nesciunt similique laboriosam facilis minus molestiae quod unde perspiciatis libero.<br><br>
+                        <img src="risorse/desc.jpeg" alt="Gallo">
+                    </span>
+                    <hr>
+                    <span id="prog">
+                        <h2>Progetti</h2>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis cum, aliquid inventore quasi eveniet labore fuga rerum omnis consequuntur itaque nesciunt similique laboriosam facilis minus molestiae quod unde perspiciatis libero.<br><br>
+                        Progetti:<br>
+                        Sito web <a href="https://fraalloo.github.io/PCTO-Green_Symphony/" target="_blank">Green Symphony</a><br>
+                        Sito web <a href="https://fraalloo.github.io/HistoryArchives/" target="_blank">Storia</a><br>
+                        Sito web <a href="">Portfolio</a> (questo)<br>
+                        Programmi in <a href="https://github.com/Fraalloo/C-CPP" target="_blank">C e C++</a><br>
+                        Progetti con <a href="https://github.com/Fraalloo/Arduino" target="_blank">Arduino</a><br>
+                    </span>
+                    <br>
+                    <br>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

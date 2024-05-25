@@ -1,0 +1,135 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Fredoka", sans-serif;
+    font-size: 100%;
+    margin: 0;
+    text-shadow: 2px 2px black;
+}
+
+a:hover{
+    color: orange;
+}
+
+header{
+    background-image: url("risorse/gg.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .titolo a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 25px 0;
+    display: block;
+}
+
+header nav ul li a:hover{
+    color: orange;
+}
+
+.btn{
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 2px;
+}
+
+.btn1{
+    display: none;
+}
+
+article .testoIniziale{
+    margin-top: 20%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+article .testoIniziale h4{
+    font-size: 150%;
+    color: white;
+    margin: 0;
+}
+
+article .testoIniziale h2{
+    font-size: 200%;
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.info{
+    border-radius: 25px;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(47,85,151);
+}
+
+.info img{
+    width: 50%;
+    border-radius: 25%;
+}
+
+.info h2{
+    font-size: 100%;
+}
+
+.info .page-nav{
+    text-decoration: none;
+}
+
+.info .page-nav ul{
+    list-style-type: none;
+    
+}
+
+.info .page-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.info .page-nav ul li a:hover{
+    color: orange;
+}
